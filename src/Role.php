@@ -108,6 +108,14 @@ class Role implements RoleInterface
     }
 
     /**
+     * Public check if a role is an ancestor.
+     */
+    public function checkCircularReferences(RoleInterface $child) : bool
+    {
+        return $this->hasAncestor($child);
+    }
+
+    /**
      * Check if a role is an ancestor.
      */
     protected function hasAncestor(RoleInterface $role) : bool

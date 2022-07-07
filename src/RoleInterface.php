@@ -28,6 +28,11 @@ interface RoleInterface
     public function hasPermission(string $name) : bool;
 
     /**
+     * Checking the ability to add children
+     */
+    public function checkCircularReferences(RoleInterface $child) : bool;
+
+    /**
      * Add a child.
      */
     public function addChild(RoleInterface $child) : void;

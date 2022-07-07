@@ -1,5 +1,5 @@
 {
-    "name": "laminas/laminas-permissions-rbac",
+    "name": "maslennikov-yv/laminas-permissions-rbac",
     "description": "Provides a role-based access control management",
     "license": "BSD-3-Clause",
     "keywords": [
